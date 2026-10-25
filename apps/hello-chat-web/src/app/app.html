@@ -1,2 +1,7 @@
 <app-nx-welcome></app-nx-welcome>
 <router-outlet></router-outlet>
+
+<div>
+  <p>Anonymous UID: {{ authService.user()?.uid ?? 'Authenticating...' }}</p>
+  <button (click)="queryGraphQL()">Test Backend GraphQL Query</button>
+</div>
