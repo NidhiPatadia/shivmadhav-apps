@@ -1,0 +1,33 @@
+{
+  "info": {
+    "_postman_id": "8d2cb89a-20dd-4930-9352-0ca446ae948b",
+    "name": "shivmadhav",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "28527087"
+  },
+  "item": [
+    {
+      "name": "healthCheck",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "graphql",
+          "graphql": {
+            "query": "query HealthCheck {\r\n  healthCheck\r\n}\r\n"
+          }
+        },
+        "url": {
+          "raw": "{{hello_chat_backend}}",
+          "host": [
+            "{{hello_chat_backend}}"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
